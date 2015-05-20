@@ -1,0 +1,20 @@
+#announcement.show {
+    margin-top: 0;
+}
+#announcement {
+    background-color: #ff0000;
+    margin-top: -51px;
+    padding: 1em 0;
+    transition: margin-top 0.25s ease 0s;
+}
+#announcement #announcement-text{
+  color: #fff;
+  font-weight: bold;
+}
+p{
+  margin: 0;
+}
+#announcement-hide a{
+  cursor: pointer;
+  color: #fff;
+}

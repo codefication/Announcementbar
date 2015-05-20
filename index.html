@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html ng-app="app">
+  <head>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">    
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+    <link href="style.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div id="announcement" ng-controller="AnnouncementCtrl" ng-class="{show: (show)}">
+      <div class="container">
+        <div id="announcement-text" class="col-md-10">
+          <p>
+            <i class="fa fa-bullhorn"></i> This is announcement bar using angularJS and CSS, from here you can make announcements to people visiting website.
+          </p>
+        </div>
+        <div class="col-md-2" id="announcement-hide">
+          <p>
+            <a ng-click="hideAnnouncement()"><i class="fa fa-times"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <header id="header">
+      <nav class="navbar  navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project</a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div><!-- /.nav-collapse -->
+        </div><!-- /.container -->
+      </nav><!-- /.navbar -->
+    </header>
+  </body>
+</html>
